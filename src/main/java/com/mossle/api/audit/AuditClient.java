@@ -16,8 +16,6 @@ public class AuditClient {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
-
         executorService = Executors.newFixedThreadPool(10);
     }
 
