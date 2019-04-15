@@ -17,9 +17,6 @@ public class AuditClient {
             ex.printStackTrace();
         }
 
-
-
-
         executorService = Executors.newFixedThreadPool(10);
     }
 
@@ -28,7 +25,7 @@ public class AuditClient {
     }
 
     public void log(String result, String username, String clientIp,
-            String description) {
+                    String description) {
         AuditWorker auditWorker = new AuditWorker();
         auditWorker.setApp(app);
         auditWorker.setUsername(username);
